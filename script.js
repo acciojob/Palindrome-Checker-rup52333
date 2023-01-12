@@ -1,8 +1,9 @@
 // complete the given function
 
 function palindrome(str){
-let newStr=str.match(/[a-z0-9]/g);
-return newStr.reverse().join('')===newStr.join('');
-	
+const alphanumericOnly = str.toLowerCase().match(/[a-z0-9]/g);
+        
+return alphanumericOnly.join('') ===
+        alphanumericOnly.reverse().join('');
 }
 module.exports = palindrome
